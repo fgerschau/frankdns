@@ -1,0 +1,35 @@
+extends ./layout.pug
+block header
+  link(rel="stylesheet" href="/css/index.css")
+block body
+  h1.title.text-center Franks Media-Station
+  .container
+    .row
+      .col-md-4
+        .card
+          a(href="http://dns.gerschau.com:15942" target="_blank")
+            h3.title.text-center Plex NAS
+            p.text-center.title Port 15942
+      .col-md-4
+        .card
+          a(href="http://dns.gerschau.com:23241" target="_blank")
+            h3.title.text-center Plex Gerschau10
+            p.text-center.title Port 23241
+      .col-md-4
+        .card
+          a(href="http://dns.gerschau.com:61706" target="_blank")
+            h3.title.text-center HTTP NAS 2
+            p.text-center.title Port 61706
+    br
+    .row
+      .col-md-4
+        .card
+          a(href="http://dns.gerschau.com:15942" target="_blank")
+            h3.title.text-center HTTP NAS 1
+            p.text-center.title Port 15942
+      .col-md-4
+        .card
+          a(href="ftp://dns.gerschau.com:61318" target="_blank")
+            h3.title.text-center FTP NAS 2
+            p.text-center.title Port 61318
+          

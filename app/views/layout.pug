@@ -1,0 +1,35 @@
+doctype html(lang='de')
+
+head
+  title 
+  meta(name="viewport", content="width=device-width, initial-scale=1")
+
+  // Bootstrap CSS
+  link(href="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/css/tether-theme-arrows-dark.min.css" rel="stylesheet")
+  link(href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous" rel="stylesheet")
+
+  link(href="https://fonts.googleapis.com/css?family=Lekton" rel="stylesheet")
+
+  // Required for Prismic Previews and Experiments
+  script(src="https://code.jquery.com/jquery-1.12.4.min.js")
+  script
+    = ctx?"window.prismic = { endpoint: '" + ctx.endpoint + "' };":""
+  script(src="//static.cdn.prismic.io/prismic.min.js")
+
+  link(rel="stylesheet", href="/css/layout.css")
+
+block header
+
+body
+  .nav-bar
+    .nav_item_box
+      ul
+        a(href="/")
+          li Home
+
+  .background
+    .content
+      block body
+
+block footer
+script(src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous")
